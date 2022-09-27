@@ -2,12 +2,11 @@ import logo from './logo.svg';
 import './App.css';
 // import {StudentList} from "./StudentList.js"
 // import {Parent} from './Parent.js'
-import {StudentListParent} from './StudentListParent'
+import {StudentListParent} from './StudentListParent.js'
+import {AddNewStudent} from './AddNewStudent'
 function App() {
   return (
     <StudentListParent/>
-  // <StudentList/>
-  // <Parent/>
   );
 }
 

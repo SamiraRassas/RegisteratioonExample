@@ -1,18 +1,17 @@
 import {useState} from "react";
-import Child from "./AddNewStudent.js";
+import AddNewStudent from "./AddNewStudent.js";
 export function StudentListParent(){
-    const [student, setstudent]= useState('');
+    const [student, setStudent]= useState('');
     const newStudent= (childdata) => {
-        setstudent(childdata);
+        setStudent(childdata);
     }
     return (
         <div>
-           
             <div>
-                <Child newStudent={newStudent}/>
+                <AddNewStudent newStudent={newStudent}/>
             </div> 
-            {student}
-                   </div>
+           <h1>'the new student is' {student}</h1>
+             </div>
     )
 
 }
